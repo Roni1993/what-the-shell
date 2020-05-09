@@ -1,0 +1,16 @@
+kind: LocalConfig
+apiversion: odo.openshift.io/v1alpha1
+ComponentSettings:
+  Type: java
+  SourceLocation: ./
+  SourceType: local
+  Ports:
+  - 8080/TCP
+  - 8443/TCP
+  - 8778/TCP
+  Application: app
+  Project: wtsh
+  Name: java-what-the-she-qmhh
+  Url:
+  - Name: wtsh
+    Port: 8080
