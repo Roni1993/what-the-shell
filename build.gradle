@@ -18,10 +18,16 @@ dependencies {
 
     testImplementation 'io.quarkus:quarkus-junit5'
     testImplementation 'io.rest-assured:rest-assured'
+    testImplementation 'org.junit.platform:junit-platform-commons:1.5.2'
+    testCompile("com.tngtech.jgiven:jgiven-junit5:0.18.2")
 }
 
 group 'org.roni'
 version '0.1.0-SNAPSHOT'
+
+test {
+    useJUnitPlatform()
+}
 
 compileJava {
     options.encoding = 'UTF-8'
