@@ -15,11 +15,12 @@ dependencies {
     implementation 'io.quarkus:quarkus-hibernate-orm'
     implementation enforcedPlatform("${quarkusPlatformGroupId}:${quarkusPlatformArtifactId}:${quarkusPlatformVersion}")
     implementation 'io.quarkus:quarkus-resteasy'
+    implementation 'org.jsoup:jsoup:1.13.1'
 
     testImplementation 'io.quarkus:quarkus-junit5'
     testImplementation 'io.rest-assured:rest-assured'
     testImplementation 'org.junit.platform:junit-platform-commons:1.5.2'
-    testCompile("com.tngtech.jgiven:jgiven-junit5:0.18.2")
+    testImplementation("com.tngtech.jgiven:jgiven-junit5:0.18.2")
 }
 
 group 'org.roni'
