@@ -3,6 +3,8 @@ import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
+import org.roni.man.ManPageDir;
+import org.roni.man.model.ManPage;
 
 import java.io.File;
 import java.io.IOException;
@@ -14,7 +16,7 @@ public class JsoupExample {
     public static void main(String[] args) throws IOException {
 
         //load from manpages.ubuntu
-        Document doc = Jsoup.connect("http://manpages.ubuntu.com/manpages/artful/en/man1/ssh-add.1.html").get();
+        Document doc = Jsoup.connect(ManPageDir.MAN1.getBaseUrl()+"ssh-add.1.html").get();
         log(doc.title());
 
         //select all the <h4>-tags
