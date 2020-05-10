@@ -28,6 +28,9 @@ public class JsoupExample {
         for (Element header : allHeaders) {
             log("%s",header.text());
         }
+
+        //check ManDirPriorityList
+        System.out.println(ManPageDir.priorityList);
     }
 
     private static void log(String msg, String... vals) {
