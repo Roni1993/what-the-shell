@@ -1,4 +1,4 @@
-package org.roni.model.man;
+package org.roni.man.model;
 
 import java.util.List;
 
