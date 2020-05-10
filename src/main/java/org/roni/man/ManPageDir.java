@@ -1,6 +1,5 @@
 package org.roni.man;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -15,14 +14,13 @@ public enum ManPageDir {
     MAN8("http://manpages.ubuntu.com/manpages/artful/en/man8/");
 
     private final String baseUrl;
-    public static List<ManPageDir> priorityList = Arrays.asList(MAN1,MAN8,MAN5, MAN7, MAN3, MAN4, MAN6,MAN2);
+    public static List<ManPageDir> priorityList = Arrays.asList(MAN1, MAN8, MAN5, MAN7, MAN3, MAN4, MAN6, MAN2);
 
     ManPageDir(String manpageBaseUrl) {
         this.baseUrl = manpageBaseUrl;
-        //createPriorityList();
     }
 
-    public String getBaseUrl(){
+    public String getBaseUrl() {
         return baseUrl;
     }
 
